@@ -5,19 +5,17 @@ import "fmt"
 type Car interface {
 	Drive()
 	Stop()
-	Airbags()
+	//Airbags()
 }
 
 type Suzuki struct {
-	SuzukiModel string
-}
-
-func NewModel(arg string) Car {
-	return &Suzuki(arg)
+	SuzukiModel   string
+	NumberofTyres int
 }
 
 type Honda struct {
-	HondaModel string
+	HondaModel    string
+	NumberofTyres int
 }
 
 func (s *Suzuki) Stop() {
@@ -26,7 +24,7 @@ func (s *Suzuki) Stop() {
 
 func (s *Suzuki) Drive() {
 	fmt.Println("Suzuki on the move")
-	fmt.Println(SuzukiModel)
+	fmt.Println(s.SuzukiModel)
 }
 
 func (s *Suzuki) Airbags() {
@@ -35,12 +33,26 @@ func (s *Suzuki) Airbags() {
 
 func (h *Honda) Drive() {
 	fmt.Println("Honda on the move")
-	fmt.Println(HondaModel)
+	fmt.Println(h.HondaModel)
+}
+
+func NewModel(name string, tyre int) Car {
+	u := Suzuki{}
+	u.SuzukiModel = name
+	u.NumberofTyres = tyre
+	return &u
 }
 
 func main() {
-	s := NewModel("Breeza")
-	h := Honda{"Amaze"}
+	//Function Calling
+	s := NewModel("Breeza", 4)
+
 	s.Drive()
+	//Object creation
+	h := Honda{}
+	h.HondaModel = "Amaze"
+	//h.NumberofTyres = 4
 	h.Drive()
+	fmt.Println(h.NumberofTyres)
+
 }

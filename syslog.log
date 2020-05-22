@@ -1,0 +1,12 @@
+time="2020-05-21T19:19:54+05:30" level=info msg="Speed of Chaitanya is 90 kmph and rating is 5.000000\n"
+time="2020-05-21T19:19:54+05:30" level=info msg="Person structure printed.." Age=19 Gender=Male Height=5.9 Name=Chaitanya
+time="2020-05-21T19:19:54+05:30" level=info msg="Name:  Chaitanya"
+time="2020-05-21T19:19:54+05:30" level=info msg="Height:  5.9"
+time="2020-05-21T19:19:54+05:30" level=info msg="Gender:  Male"
+time="2020-05-21T19:19:54+05:30" level=info msg="Age:  19"
+time="2020-05-21T19:19:54+05:30" level=info msg="Speed of Jai is 10 kmph and rating is 1.000000\n"
+time="2020-05-21T19:19:54+05:30" level=info msg="Person structure printed.." Age=13 Gender=Female Height=5.9 Name=Jai
+time="2020-05-21T19:19:54+05:30" level=info msg="Name:  Jai"
+time="2020-05-21T19:19:54+05:30" level=info msg="Height:  5.9"
+time="2020-05-21T19:19:54+05:30" level=info msg="Gender:  Female"
+time="2020-05-21T19:19:54+05:30" level=info msg="Age:  13"
